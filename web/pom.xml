@@ -11,7 +11,7 @@
   <packaging>war</packaging>
 
   <build>
-    <!-- ✅ This removes version from WAR name -->
+    <!-- This removes version from WAR name -->
     <finalName>web</finalName>
 
     <plugins>
@@ -23,7 +23,7 @@
         <configuration>
           <failOnMissingWebXml>false</failOnMissingWebXml>
 
-          <!-- 🔥 THIS IS THE FIX -->
+          <!-- war source directory fix -->
           <warSourceDirectory>src/main/webapp</warSourceDirectory>
         </configuration>
 
